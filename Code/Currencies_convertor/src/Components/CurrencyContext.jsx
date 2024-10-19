@@ -1,10 +1,11 @@
-import React, { createContext, useState, useEffect } from 'react';
+import { createContext, useState, useEffect } from 'react';
 
 const API_URL = `https://api.currencyapi.com/v3/latest?apikey=cur_live_zMpqvDwiLVfraaI8mLEhnuq2EvisS49fBAsBFdUU`;
 
 const CurrencyContext = createContext();
 
 const CurrencyProvider = ({ children }) => {
+  
   const [rates, setRates] = useState({});
   const [baseCurrency, setBaseCurrency] = useState('USD');
   const [targetCurrency, setTargetCurrency] = useState('EUR');
@@ -13,7 +14,7 @@ const CurrencyProvider = ({ children }) => {
 
   // Fetch exchange rates from the API
   useEffect(() => {
-    axios.get(API_URL)
+    fetch.get(API_URL)
       .then(response => {
         const exchangeRates = response.data.rates;
         setRates(exchangeRates);
