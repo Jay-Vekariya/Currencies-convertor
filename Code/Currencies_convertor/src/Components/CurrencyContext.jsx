@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 
-const API_URL = `https://api.currencyapi.com/v3/latest?apikey=cur_live_zMpqvDwiLVfraaI8mLEhnuq2EvisS49fBAsBFdUU`;
+const API_URL = `https://api.currencyapi.com/v3/latest?apikey=cur_live_S0HQkKehFPpGnx5ZLKqaSuAdCRO6ceLGA71Hwu1P`;
 
 export const CurrencyContext = createContext();
 
