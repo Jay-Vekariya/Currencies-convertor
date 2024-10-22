@@ -19,7 +19,7 @@ const CurrencyConverter = () => {
           value={amount}
           onChange={handleAmountChange}
           min="1"
-          className="bg-slate-700 border-white border-2 rounded-md min-w-20 text-center"
+          className="bg-slate-700 border-white border-2 rounded-md min-w-20 text-center h-10"
         />
       </div>
 
