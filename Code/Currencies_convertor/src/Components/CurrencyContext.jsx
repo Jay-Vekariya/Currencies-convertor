@@ -7,8 +7,8 @@ export const CurrencyContext = createContext();
 export const CurrencyProvider = ({ children }) => {
   
   const [rates, setRates] = useState({});
-  const [baseCurrency, setBaseCurrency] = useState('');
-  const [targetCurrency, setTargetCurrency] = useState('');
+  const [baseCurrency, setBaseCurrency] = useState('USD');
+  const [targetCurrency, setTargetCurrency] = useState('INR');
   const [amount, setAmount] = useState(1);
   const [convertedAmount, setConvertedAmount] = useState(0);
 
